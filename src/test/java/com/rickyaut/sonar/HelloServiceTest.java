@@ -8,7 +8,9 @@ public class HelloServiceTest {
 
 	@Test
 	public void test() {
-		Assert.assertEquals("Hello", new HelloService().getMessage());
+		HelloService helloService = new HelloService();
+		Assert.assertEquals("Hello", helloService.getMessage());
+		Assert.assertEquals("Ricky", helloService.getName());
 	}
 
 }
